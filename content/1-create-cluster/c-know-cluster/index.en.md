@@ -9,7 +9,7 @@ Now that you are connected to the head node, you can familiarize yourself with t
 [SLURM](https://slurm.schedmd.com/) from SchedMD is one of the resource manager that you can use in AWS ParallelCluster. For an overview of the SLURM commands, see the [SLURM Quick Start User Guide](https://slurm.schedmd.com/quickstart.html). If you are familar with PBS, here is the [PBS-Slurm Conversion Cheat Sheet](https://www.nrel.gov/hpc/assets/pdfs/pbs-to-slurm-translation-sheet.pdf)
 :::
 
-Your bash user should be similar to `ec2-user@ip-<IP-address>`. If it is otherwise something like `sh-4.2` or `ssm-user@<IP-address>`, then run the following command before proceeding:
+Your user should be similar to `ec2-user@ip-<IP-address>`. If it is otherwise something like `sh-4.2` or `ssm-user@<IP-address>`, then run the following command before proceeding:
 
 ```bash
 sudo su ec2-user
@@ -36,14 +36,11 @@ sudo su ec2-user
 
     ![sinfo](/static/images/1-gettoknow-sinfo.png)
 
-2. We are going to use the [csh](https://github.com/tcsh-org/tcsh). First we copy the CMAQ settings to our `.cshrc` file, then add module file path, lastly we execute a `csh` shell.
+2. **Change shell to use tcsh**
 
-    ```csh
-    cp /shared/pcluster-cmaq/install/dot.cshrc.pcluster ~/.cshrc
-    echo 'module use --append /shared/build/Modules/modulefiles' >> $HOME/.cshrc
-    csh
-    ```
-
+   ```csh
+   /bin/tcsh
+   ```
 
 3. **List jobs in the queues or running.** Obviously, there won’t be any since we have not submitted anything… yet!
 
@@ -69,10 +66,10 @@ sudo su ec2-user
 
     ![module avail](/static/images/1-gettoknow-moduleavail.png)
 
-5. **Load a particular module.** In this case, this command loads Intel MPI in your environment and checks the path of *mpirun*.
+5. **List the modules that are loaded.** 
 
     ```csh
-    module load ioapi-3.2/gcc-9.5-netcdf  netcdf-4.8.1/gcc-9.5 openmpi/4.1.5 libfabric-aws
+    module list
     which mpirun
     ```
 

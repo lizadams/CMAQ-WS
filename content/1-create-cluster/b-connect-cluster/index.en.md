@@ -3,14 +3,45 @@ title: Connect to the cluster
 weight: 22
 --- 
 
-#### Option 1: SSM Connect 
+#### Option 1: SSM Connect (for running jobs)
 
 1. After cluster creation completes, with the created cluster selected, choose **Shell** to access the cluster head node.
 
     ![Connect cluster - shell](/static/images/1-connectcluster-shell.png)
 
+2. Verify you are logged in as ec2-user
 
-#### Option 2: DCV
+```csh
+whoami
+```
+
+Your user should be similar to ec2-user@ip-<IP-address>. If it is otherwise something like sh-4.2 or ssm-user@<IP-address>, then run the following command before proceeding:
+
+```csh
+sudo su ec2-user
+```
+
+3. Switch to .tcsh shell 
+
+```csh
+cp /shared/pcluster-cmaq/install/tcshrc.pcluster-spack-conda ~/.tcshrc 
+```
+
+4. Change to .tcsh shell
+
+```csh
+/bin/tcsh
+``` 
+
+5. Verify that the environment modules have  been loaded
+
+```csh
+module list
+```
+
+
+
+#### Option 2: DCV - for activities where you need to use X11 imagemagick display (creating plots)
 
 1. After cluster creation completes, with the created cluster selected, choose **DCV** to access the cluster head node.
 
