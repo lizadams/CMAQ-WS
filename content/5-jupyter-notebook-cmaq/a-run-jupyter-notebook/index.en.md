@@ -29,7 +29,7 @@ jupyter notebook
 
 5. Double Click on the Spatial_Plots_of_Max_Conc_Differences.ipynb notebook
 
-![jupyter notebook](/static/images/3-jupyter-notebook.png)
+![jupyter notebook](/static/images/5-jupyter-notebook.png)
 
 6. In each cell you can use the 'shift return'  or 'shift enter' to run each cell
 

@@ -16,3 +16,7 @@ jupyter notebook
 
 3. **Use the Shift Enter keys to run each cell within the Jupyter Notebook**
 
+Output:
+
+
+![Successful DMS Chlora Plot](/static/images/8-CMAQ_DMS_Chlora_plot.png)

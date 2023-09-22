@@ -69,7 +69,7 @@ Restart ssh
 sudo service sshd restart
 ```
 
-Exit the cluster
+Exit the cluster (exit until the terminal closes)
 
 `exit`
 
@@ -77,6 +77,20 @@ Relogin to the cluster
 
 5. Test display
 
-`display`
+```csh
+display
+```
 
-If display still doesn't work, then try running the display command on the terminal within the DCV.
+If display still doesn't work, then try running the display command on the terminal within the DCV. If you had previously started the DCV, you need to exit and then restart it.
+
+6. After restarting DCV verify your username and restart the tcsh shell.
+
+```csh
+/bin/tcsh
+```  
+
+7. Run display on the terminal window within DCV
+
+```csh
+display
+```

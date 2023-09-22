@@ -11,6 +11,11 @@ Find our Weather HPC customer case studies at https://aws.amazon.com/hpc/custome
 
 Doing all parts of this workshop should take approximately 3 hours.
 
-This workshop is designed for builders who want to learn more about running CMAQ within AWS.
+This workshop is designed for modelers who want to learn more about running CMAQ within AWS.
 
 ![Surface temperature](static/images/0-PM25_VERDI.gif)
+
+**Region specific constraints**
+
+In order to successfully run this workshop, you should select a region where Amazon EC2 hpc7g instances are available.
+Additionally, the snapshot that contains the software installation is open to the public, and is available in the us-east-1 region.

@@ -55,6 +55,6 @@ module list
 
     ![Connect cluster - DCV pop-up](/static/images/1-connectcluster-dcvpopup.png)
 
-3. To launch a terminal (where the rest of the workshop will run), click **Activities**, then **Terminal**. 
+3. To launch a terminal (where the rest of the workshop will run), click **Activities**, then **Applications Grid**, then **Terminal**. 
 
-    ![Connect cluster - DCV terminal](/static/images/1-connectcluster-dcvterminal.png)
+    ![Connect cluster - DCV terminal](/static/images/6-verdi-dcv-select-terminal.png)
