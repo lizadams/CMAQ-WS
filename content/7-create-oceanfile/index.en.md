@@ -16,7 +16,6 @@ If you have ocean in your domain, and you would like to use cb6r5 mechanism, the
 
 For the full tutorial on how to create an OCEANFILE for cb6r5, please see https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/Tutorials/CMAQ_UG_tutorial_oceanfile.md
 
-
 * Change directory to location of Python Tools
 * Verify the Ocean File location
 * Start the Jupyter Notebook
