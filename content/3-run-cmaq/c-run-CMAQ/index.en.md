@@ -27,6 +27,29 @@ set START_DATE = "2017-12-22"     #> beginning date (January 22, 2017)
 set END_DATE   = "2017-12-22"     #> ending date     
 ```
 
+3. Edit the namelist file to specify the variables and layers output to the ELMO and AELMO file
+
+```csh
+cd BLD_CCTM_v54+_gcc
+vi CMAQ_Control_Misc.nml
+```
+Edit to activate both instant and average ELMO
+
+```
+&elmo_activate
+  instant = .TRUE.
+  average = .TRUE.
+/
+```
+
+Edit to specify the AMET output variables
+
+```
+Inst_Vars_Nml = 'AMET'
+Avrg_Vars_Nml = 'AMET'
+```
+
+
 
 2. **Load the Environment Modules**
 
