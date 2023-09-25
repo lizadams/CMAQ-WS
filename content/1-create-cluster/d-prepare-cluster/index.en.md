@@ -30,22 +30,33 @@ Only use these instructions if you have checked with the instructor to verify th
 
     ```csh
     sudo yum update
+   ```
+
+2. **Add amazon linux extras**
+
+    ```csh
     sudo amazon-linux-extras install epel -y
     ```
-2. **Add Firefox Browser**
+
+3. **Add Firefox Browser**
 
    ```csh
    sudo amazon-linux-extras install firefox
    ```
 
-3. Install Imagemagick
+4.  Additional yum instructions
 
 ```csh
 sudo yum makecache fast
+```
+
+5. Install Imagemagic
+
+```csh
 sudo yum install ImageMagick ImageMagick-devel
 ```
 
-4. Enable X11 forwarding
+6. Enable X11 forwarding
 
 ```csh
 sudo vi /etc/ssh/sshd_config
@@ -75,7 +86,7 @@ Exit the cluster (exit until the terminal closes)
 
 Relogin to the cluster
 
-5. Test display
+7. Test display
 
 ```csh
 display
