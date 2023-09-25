@@ -38,10 +38,19 @@ jupyter notebook
 8. After the last cell is run, you should see output such as: 
 
 There are no differences in GLYD, ..
+Ignore any error or warning messages.
 
-9. Go to the output directory and use display to visualize the results
+9. View the plots within the Jupyter Notebook in cells after the plots have been generated 
 
-```csh
-/fsx/data/output/images/
-display NH3_difference_between_Base_Case_vs_Sens_Case_on_12-22-2017_14:*
-```
+10. Plot of maximum negative decrease in SO2 Concentration
+
+![maximum negative decrease in SO2 Concentration](/static/images/6-SO2-max-negative.png)
+
+11. Plot of maximum negative decrease in ASO4J Concentration
+
+![maximum negative decrease in ASO4J Concentration](/static/images/6-ASO4J-max-negative.png)
+
+12. Plot of maximum negative decrease in Benzene Concentration
+
+![maximum negative decrease in Benzene Concentration](/static/images/6-benzene-max-negative.png)
+
