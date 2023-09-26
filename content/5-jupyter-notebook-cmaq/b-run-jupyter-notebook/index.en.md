@@ -1,5 +1,5 @@
 ---
-title: Run Jupyter Notebook to analyze difference between with DESID Emissions and the base case (no emission reduction) (do this after you enable X11 Display)
+title: Run Jupyter Notebook to analyze difference between with DESID Emissions and the base case (no emission reduction)
 weight: 30 
 ---
 
