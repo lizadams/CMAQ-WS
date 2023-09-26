@@ -29,13 +29,19 @@ sudo su ec2-user
 
 ![ec2-user](/static/images/1-gettoknow-ec2user.png)
 
-3. **Verify shell**
+3. Copy .tcshrc from the git repo
+
+```csh
+cp /shared/pcluster-cmaq/install/tcshrc.pcluster-spack-conda ~/.tcshrc
+```
+
+4. **Verify shell**
 
    ```csh
    echo $SHELL
    ```
 
-4. **If not in tcsh shell, then change shell to use tcsh**
+5. **If not in tcsh shell, then change shell to use tcsh**
 The tcsh shell loads the custom module environment required to run CMAQ. 
 
    ```csh
@@ -43,7 +49,7 @@ The tcsh shell loads the custom module environment required to run CMAQ.
    ```
 
 
-5. **List existing partitions and nodes per partition.** 
+6. **List existing partitions and nodes per partition.** 
 
     ```bash
     sinfo
@@ -67,7 +73,7 @@ The tcsh shell loads the custom module environment required to run CMAQ.
 
 [Environment Modules](http://modules.sourceforge.net/) or [Lmod](https://lmod.readthedocs.io/en/latest/) are fairly standard tools in HPC that are used to dynamically change your environment variables (`PATH`, `LD_LIBRARY_PATH`, etc.).
 
-6. **List available modules**  The cluster has *openmpi* pre-installed by amazon. This MPI version of openmpi was compiled with support for the high-speed interconnect EFA.
+7. **List available modules**  The cluster has *openmpi* pre-installed by amazon. This MPI version of openmpi was compiled with support for the high-speed interconnect EFA.
 
     ```csh
     module avail
