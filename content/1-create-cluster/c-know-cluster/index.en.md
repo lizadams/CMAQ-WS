@@ -10,7 +10,7 @@ Now that you are connected to the head node, you can familiarize yourself with t
 :::
 
 :::alert{type=info}
-Please use the SSM Connect Shell for all sections of the training except the visualization using Jupyter Notebook or VERI
+Please use the SSM Connect Shell for all sections of the training except the visualization using Jupyter Notebook or VERDI
 :::
 
 If you create a new shell, or switch between a shell in the Terminal on SSM Connect, you will need to verify your username and verify that you are using the tcsh shell..
