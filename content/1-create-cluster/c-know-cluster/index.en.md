@@ -44,7 +44,7 @@ The tcsh shell loads the custom module environment required to run CMAQ.
    ```
 
 
-6. **List existing partitions and nodes per partition.** 
+5. **List existing partitions and nodes per partition.** 
 
     ```bash
     sinfo
@@ -68,7 +68,7 @@ The tcsh shell loads the custom module environment required to run CMAQ.
 
 [Environment Modules](http://modules.sourceforge.net/) or [Lmod](https://lmod.readthedocs.io/en/latest/) are fairly standard tools in HPC that are used to dynamically change your environment variables (`PATH`, `LD_LIBRARY_PATH`, etc.).
 
-7. **List available modules**  The cluster has *openmpi* pre-installed by amazon. This MPI version of openmpi was compiled with support for the high-speed interconnect EFA.
+6. **List available modules**  The cluster has *openmpi* pre-installed by amazon. This MPI version of openmpi was compiled with support for the high-speed interconnect EFA.
 
     ```csh
     module avail
