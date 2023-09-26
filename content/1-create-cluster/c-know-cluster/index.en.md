@@ -29,19 +29,14 @@ sudo su ec2-user
 
 ![ec2-user](/static/images/1-gettoknow-ec2user.png)
 
-3. Copy .tcshrc from the git repo to load environment modules required for training.
-
-```csh
-cp /shared/pcluster-cmaq/install/tcshrc.pcluster-spack-conda ~/.tcshrc
-```
-
-4. **Verify shell**
+3. **Verify shell**
 
    ```csh
    echo $SHELL
    ```
 
-5. **If not in tcsh shell, then change shell to use tcsh**
+4. **If not in tcsh shell, then change shell to use tcsh**<br>
+
 The tcsh shell loads the custom module environment required to run CMAQ. 
 
    ```csh
