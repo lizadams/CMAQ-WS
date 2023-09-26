@@ -1,5 +1,5 @@
 ---
-title: "Use VERDI to visualize the change in Ozone and PM2.5 due to reducing emissions from PT_EGU sources in New York"
+title: "Use VERDI to visualize the change in SO2 and NO2 due to reducing emissions from PT_EGU sources in New York"
 weight: 20
 --- 
 
@@ -13,7 +13,7 @@ Please use the following scripted versions.
 cd /shared/pcluster-cmaq/qa_scripts/workshop
 ```
 
-### Run VERDI to look at the change in PM2.5
+### Run VERDI to look at the change in NO2
 
 ```csh
 ./verdi_compare_NO2_CONC_DESID_vs_base.csh
