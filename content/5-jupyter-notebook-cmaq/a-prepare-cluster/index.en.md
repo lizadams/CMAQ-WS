@@ -1,5 +1,5 @@
 ---
-title: Prepare cluster and enable X11 display (only if display doesn't work)
+title: Prepare cluster and enable X11 display
 weight: 23
 --- 
 
