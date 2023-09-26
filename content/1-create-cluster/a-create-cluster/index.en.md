@@ -20,13 +20,13 @@ To import the data to the lustre filesystem from the S3 bucket automatically:
 
 Download the cluster configuration file below:
 
-    :button[Download Template]{href="/static/cluster-config-hpc7g-alinux-snap-spack.yaml" action=download}
+:button[Download Template1]{href="/static/cluster-config-hpc7g-alinux-snap-spack.yaml" action=download}
 
 To configure the lustre filesystem and then copy the data from the s3 bucket using the `aws s3 cp` command
 
 Download the cluster configuration file below:
 
-    :button[Download Template]{href="/static/cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml" action=download}
+:button[Download Template2]{href="/static/cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml" action=download}
 
 
 2. In the home page of the AWS ParallelCluster UI, in **Clusters**, select `us-east-1` as your Region on the top-right side of the page, then choose **Create cluster**.
@@ -41,7 +41,7 @@ Download the cluster configuration file below:
 
     ![Create cluster - name](/static/images/1-createcluster-name.png)
 
-* You will be prompted to provide a file. Select the cluster configuration file that you downloaded in step 1 above, which is titled `cluster-config-hpc7g.yaml`.
+* You will be prompted to provide a file. Select the cluster configuration file that you downloaded in step 1 above, which is titled `cluster-config-hpc7g-alinux-snap-spack.yaml` or `cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml`.
 
 4. In **Cluster**, select a VPC from your account (there should only be one available in the dropdown), and choose **Next**. 
 
