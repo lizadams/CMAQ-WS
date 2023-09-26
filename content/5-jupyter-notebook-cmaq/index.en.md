@@ -38,6 +38,6 @@ a) You run each cell by clicking in it and then pressing Enter+Shift
 b) You will be prompted to provide some inputs such as color schemes, and time zone information, etc
 
 :::alert{type=info}
-If you have any feedback or need help, please submit an issue in the Python Category on the CMAS Center Forum https://forum.cmascenter.org/c/python/58 and mention Sarah using `@slfarrell` in the issue to obtain her help.
+If you have any feedback or need help, please submit an issue in the Python Category on the CMAS Center Forum https://forum.cmascenter.org/c/python/58 and mention Sara using `@slfarrell` in the issue to obtain her help.
 :::
 
