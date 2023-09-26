@@ -3,7 +3,9 @@ title: Visualize Results using Jupyter Notebook
 weight: 20
 --- 
 
-For this training, use the DCV.
+For this training, use the DCV once the X11 display has been set up.
+
+Note: it is easier to use copy-and-paste in the SSM Display, as this doesn't work well in the DCV
 
 NICE DCV is a high-performance remote display protocol that provides customers with a secure way to deliver remote desktops and application streaming from any cloud or data center to any device, over varying network conditions.
 
