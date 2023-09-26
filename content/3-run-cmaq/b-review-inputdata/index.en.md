@@ -53,7 +53,9 @@ nohup find /fsx/ -type f -print0 | xargs -0 -n 1 sudo lfs hsm_restore &
 
 3. **If the input data is not already there, then copy the data from the s3://cmas-cmaq/ bucket using the following command**
 
-`aws s3 --no-sign-request cp --recursive s3://cmas-cmaq/CMAQv5.4_2018_12US1_Benchmark_2Day_Input /fsx/CMAQv5.4_2018_12US1_Benchmark_2Day_Input`
+```csh
+aws s3 --no-sign-request cp --recursive s3://cmas-cmaq/CMAQv5.4_2018_12US1_Benchmark_2Day_Input /fsx/CMAQv5.4_2018_12US1_Benchmark_2Day_Input
+```
 
 4. **Create a directory that specifies the full path that the run scripts are expecting.**
 
