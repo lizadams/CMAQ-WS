@@ -132,6 +132,14 @@ ssh -Y compute-dy-hpc7g-1
 sudo yum install htop
 ```
 
+After you get the following response
+
+```
+Is this ok [y/d/N]:
+```
+
+Enter y 
+
 13. **Run htop on the compute node**
 
 ```csh
