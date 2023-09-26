@@ -52,6 +52,7 @@ nohup find /fsx/ -type f -print0 | xargs -0 -n 1 sudo lfs hsm_restore &
 ```
 
 3. **If the input data is not already there, then copy the data from the s3://cmas-cmaq/ bucket using the following command**
+If the data transfers at 160 MiB/sec, then it will take about 10 minutes.
 
 ```csh
 aws s3 --no-sign-request cp --recursive s3://cmas-cmaq/CMAQv5.4_2018_12US1_Benchmark_2Day_Input /fsx/CMAQv5.4_2018_12US1_Benchmark_2Day_Input

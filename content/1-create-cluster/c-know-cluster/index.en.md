@@ -9,7 +9,11 @@ Now that you are connected to the head node, you can familiarize yourself with t
 [SLURM](https://slurm.schedmd.com/) from SchedMD is one of the resource manager that you can use in AWS ParallelCluster. For an overview of the SLURM commands, see the [SLURM Quick Start User Guide](https://slurm.schedmd.com/quickstart.html). If you are familar with PBS, here is the [PBS-Slurm Conversion Cheat Sheet](https://www.nrel.gov/hpc/assets/pdfs/pbs-to-slurm-translation-sheet.pdf)
 :::
 
-If you create a new shell, or switch between a shell in the Terminal on SSM Connect versus a Terminal on the DCV, you will need to verify your username and verify that you are using the tcsh shell..
+:::alert{type=info}
+Please use the SSM Connect Shell for all sections of the training except the visualization using Jupyter Notebook or VERI
+:::
+
+If you create a new shell, or switch between a shell in the Terminal on SSM Connect, you will need to verify your username and verify that you are using the tcsh shell..
 
 Your user should be similar to `ec2-user@ip-<IP-address>`. If it is otherwise something like `sh-4.2` or `ssm-user@<IP-address>`, then run the following command before proceeding:
 
