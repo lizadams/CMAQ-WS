@@ -21,15 +21,23 @@ This script works to create spatial difference plots for each variable in the tw
    
 2. **Other_Features**
 
-a. Works with <font color="teal">**Lambert Conformal**</font> (CONUS and states/localities within) and <font color="purple">**Stereographically**</font> (N. Hemispheric) Projected output
+a. Works with <font color="teal">**Lambert Conformal**</font> (CONUS and states/localities within) and <font color="purple">**Stereographically**</font> (N. Hemispheric) Projected output<br>
 
-If you need another spatial domain not covered Sara Farrell can add one in!
+:::alert{type=info}
+   If you need another spatial domain not covered Sara Farrell can add one in!
+:::
+
 b.  Showcases colorgrid options
+
 c.  Extracts time, projection, species and units from file headers
  
 3. **General Instructions**
 
 a) You run each cell by clicking in it and then pressing Enter+Shift
+
 b) You will be prompted to provide some inputs such as color schemes, and time zone information, etc
-c) This is in it's beta form so if you have any feedback or need help, please submit an issue on CMAS Center Forum https://forum.cmascenter.org/c/python/58 and mention Sarah using `@slfarrell` in the issue to obtain her help.
+
+:::alert{type=info}
+If you have any feedback or need help, please submit an issue on CMAS Center Forum https://forum.cmascenter.org/c/python/58 and mention Sarah using `@slfarrell` in the issue to obtain her help.
+:::
 
