@@ -29,7 +29,14 @@ which verdi.sh
 ls -rlt /usr/lib/jvm/java-17-amazon-corretto.aarch64/lib/libawt.so
 ```
 
-5. Install GUI libraries following these instructions: 
+5. Install libraries needed for headless display
+
+```csh
+wget https://download.oracle.com/java/17/archive/jdk-17.0.8_linux-aarch64_bin.rpm
+sudo rpm -ivh jdk-17.0.8_linux-aarch64_bin.rpm
+```
+
+6. Install additional GUI libraries following these instructions: 
 
 https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/amazon-linux-install.html
 
