@@ -60,6 +60,7 @@ module load gcc/gcc-9.3 ioapi-3.2/gcc-9.3-netcdf netcdf-4.8.1/gcc-9.3
 5. **Submit the Run script to the SLURM queue**
 
 ```csh
+cd /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts
 sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
