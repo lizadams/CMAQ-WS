@@ -29,7 +29,7 @@ sudo su ec2-user
 
 ![ec2-user](/static/images/1-gettoknow-ec2user.png)
 
-3. Copy .tcshrc from the git repo
+3. Copy .tcshrc from the git repo to load environment modules required for training.
 
 ```csh
 cp /shared/pcluster-cmaq/install/tcshrc.pcluster-spack-conda ~/.tcshrc
