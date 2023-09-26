@@ -104,13 +104,10 @@ Note, if you define only one diagnostic rule, you must comment out all other rul
 diff CMAQ_Control_DESID_RED_EGU_POINT_NY.nml /shared/pcluster-cmaq/qa_scripts/workshop/CMAQ_Control_DESID_RED_EGU_POINT_NY.nml
 ```
 
-3. **Copy the Run script and edit it to use the DESID namelist files**
+7. **Copy the Run script and edit it to use the DESID namelist files**
 
 ```csh
 cd /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts/BLD_CCTM_v54+_gcc
 cp run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic_DESID_RED_NY.csh
 ```
-
-
-:::
 
