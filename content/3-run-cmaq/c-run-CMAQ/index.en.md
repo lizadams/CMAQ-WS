@@ -27,13 +27,13 @@ set START_DATE = "2017-12-22"     #> beginning date (January 22, 2017)
 set END_DATE   = "2017-12-22"     #> ending date     
 ```
 
-3. Edit the namelist file to specify the variables and layers output to the ELMO and AELMO file
+3. The CMAQ_Control_Misc.nml namelist file was modified (just review instructions below).
 
 ```csh
 cd BLD_CCTM_v54+_gcc
 vi CMAQ_Control_Misc.nml
 ```
-Edit to activate both instant and average ELMO
+Activate both instant and average ELMO
 
 ```
 &elmo_activate
@@ -42,11 +42,11 @@ Edit to activate both instant and average ELMO
 /
 ```
 
-Edit to specify the AMET output variables
+Specify the a limited set of output variables
 
-```
-Inst_Vars_Nml = 'AMET'
-Avrg_Vars_Nml = 'AMET'
+```csh
+Inst_Vars_Nml = 'NO2', 'SO2', 'O3', 'PM25', 'NOX', 'ASO4I', 'ASO4J', 'ASO4K', 'ANO3I', 'ANO3J', 'ANO3K', 'BENZENE', 'SULF'
+Avrg_Vars_Nml = 'NO2', 'SO2', 'O3', 'PM25', 'NOX', 'ASO4I', 'ASO4J', 'ASO4K', 'ANO3I', 'ANO3J', 'ANO3K', 'BENZENE', 'SULF'
 ```
 
 
