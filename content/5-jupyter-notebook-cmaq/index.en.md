@@ -17,7 +17,7 @@ This plot was developed by Sara Farrell from US EPA.
    
 1. **Main_Purpose**
 
-This script works to create spatial difference plots of the daily average difference between two CMAQ output files
+This script works to create spatial difference plots for each variable in the two CMAQ output files
    
 2. **Other_Features**
 
@@ -26,7 +26,6 @@ a. Works with <font color="teal">**Lambert Conformal**</font> (CONUS and states/
 If you need another spatial domain not covered Sara Farrell can add one in!
 b.  Showcases colorgrid options
 c.  Extracts time, projection, species and units from file headers
-d.  Circles the grid cell and area where the max difference occurs
  
 3. **General Instructions**
 
