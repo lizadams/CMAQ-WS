@@ -23,7 +23,7 @@ Output
 
 ------
 
-Only use these instructions if you have checked with the instructor to verify that display is not working:
+These instructions will take some time, so be patient!
 
 1. **Update Yum**
 
