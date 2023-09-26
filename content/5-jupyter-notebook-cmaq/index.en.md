@@ -3,7 +3,7 @@ title: Visualize Results using Jupyter Notebook
 weight: 20
 --- 
 
-For this training, use the DCV once the X11 display has been set up.
+**For this training, use the DCV once the X11 display has been set up.**
 
 Note: it is easier to use copy-and-paste in the SSM Display, as this doesn't work well in the DCV
 
