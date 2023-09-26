@@ -27,20 +27,43 @@ set START_DATE = "2017-12-22"     #> beginning date (January 22, 2017)
 set END_DATE   = "2017-12-22"     #> ending date     
 ```
 
+3. Edit the namelist file to specify the variables and layers output to the ELMO and AELMO file
 
-2. **Load the Environment Modules**
+```csh
+cd BLD_CCTM_v54+_gcc
+vi CMAQ_Control_Misc.nml
+```
+Edit to activate both instant and average ELMO
+
+```
+&elmo_activate
+  instant = .TRUE.
+  average = .TRUE.
+/
+```
+
+Edit to specify the AMET output variables
+
+```
+Inst_Vars_Nml = 'AMET'
+Avrg_Vars_Nml = 'AMET'
+```
+
+
+
+4. **Load the Environment Modules**
 
 ```csh
 module load gcc/gcc-9.3 ioapi-3.2/gcc-9.3-netcdf netcdf-4.8.1/gcc-9.3
 ```
 
-3. **Submit the Run script to the SLURM queue**
+5. **Submit the Run script to the SLURM queue**
 
 ```csh
 sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
-4. **Check the status of the job**
+6. **Check the status of the job**
 
 ```csh
 squeue
@@ -55,7 +78,7 @@ Output
 
 Wait for the status to change from CF to R
 
-5. If the job fails to run, then verify your username is ec2-user
+7. If the job fails to run, then verify your username is ec2-user
 
 ```csh
 whoami
@@ -63,19 +86,19 @@ whoami
 
 If the output is ssm-user, then use the following command to switch users, and resubmit the job.
 
-6. Switch to ec2-user
+8. Switch to ec2-user
 
 ```csh
 sudo su ec2-user
 ```
 
-7. **Re-Submit the Run script to the SLURM queue**
+9. **Re-Submit the Run script to the SLURM queue**
 
 ```csh
 sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
-8. CMAQ does not use parallel I/O so it will take about 3 minutes at the beginning of the run before you see output such as this:
+10. CMAQ does not use parallel I/O so it will take about 3 minutes at the beginning of the run before you see output such as this:
 
 ```
    Processing Day/Time [YYYYDDD:HHMMSS]: 2017356:002000
@@ -96,19 +119,19 @@ sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
 
-8. **Login to the compute node**
+11. **Login to the compute node**
 
 ```csh
 ssh -Y compute-dy-hpc7g-1
 ```
 
-9. **Install htop on the compute node**
+12. **Install htop on the compute node**
 
 ```csh
 sudo yum install htop
 ```
 
-10. **Run htop on the compute node**
+13. **Run htop on the compute node**
 
 ```csh
 htop
@@ -118,7 +141,7 @@ Output
 
 ![ec2-user](/static/images/2-run-cmaq-htop.png)
 
-11. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
+14. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
 
 
-12. **Proceed to the next step of running CMAQ using DESID (skip examining the timings until later)**.
+15. **Proceed to the next step of running CMAQ using DESID (skip examining the timings until later)**.

@@ -8,12 +8,12 @@ weight: 21
 2. **Change directories to the PYTOOLS location**
 
 ```csh
-cd /shared/build/openmpi-gcc/CMAQv5.4+/PYTOOLS
+cd /shared/build/CMAQ_REPO_v54+/PYTOOLS/
 ```
 
 3. **Verify the libraries are available on the Python Installation**
 
-```
+```csh
 python install/show_versions.py install/requirements.txt
 ```
 
