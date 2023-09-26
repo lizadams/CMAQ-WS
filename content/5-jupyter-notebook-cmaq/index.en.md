@@ -11,13 +11,13 @@ There are additional methods to create plots of CMAQ Output Data, and some of th
 Typically these files end in an extention that reflects their contents as follows:
 R (.R), Python (.py), and Jupyter Notebook (.ipynb)
 
-**Spatial Plots of Max Percent Differences**
+**Spatial Plots of Daily Average Difference**
 
-This plot was developed by Sara Farrell from US EPA, modified slightly by Liz Adams as a work-around for not being able to use cut-and-paste functionality in the DCV.
+This plot was developed by Sara Farrell from US EPA.
    
 1. **Main_Purpose**
 
-This script works to create spatial difference plots at the date and time where said max percent difference occurs (in both the positive and negative direction) between two CMAQ output files
+This script works to create spatial difference plots of the daily average difference between two CMAQ output files
    
 2. **Other_Features**
 
@@ -32,5 +32,5 @@ d.  Circles the grid cell and area where the max difference occurs
 
 a) You run each cell by clicking in it and then pressing Enter+Shift
 b) You will be prompted to provide some inputs such as color schemes, and time zone information, etc
-c) This is in it's beta form so if you have any feedback or need help, please submit an issue on CMAS Center Forum https://forum.cmascenter.org/c/python/58 for help
+c) This is in it's beta form so if you have any feedback or need help, please submit an issue on CMAS Center Forum https://forum.cmascenter.org/c/python/58 and mention Sarah using `@slfarrell` in the issue to obtain her help.
 
