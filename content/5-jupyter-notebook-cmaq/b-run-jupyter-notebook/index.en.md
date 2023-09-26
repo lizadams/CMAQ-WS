@@ -1,6 +1,6 @@
 ---
 title: Run Jupyter Notebook to analyze difference between with DESID Emissions and the base case (no emission reduction) (do this after you enable X11 Display)
-weight: 20
+weight: 30 
 ---
 
 ###  Connect to the NICE DCV 
