@@ -25,7 +25,6 @@ cd /shared/pcluster-cmaq/qa_scripts/workshop
 jupyter notebook
 ```
 
-(note it may take a few minutes to load within the firefox web browswer)
 
 5. Double Click on the Spatial_Plots_of_Max_Conc_Differences.ipynb notebook
 

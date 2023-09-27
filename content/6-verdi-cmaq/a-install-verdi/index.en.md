@@ -41,8 +41,8 @@ sudo rpm -ivh jdk-17.0.8_linux-aarch64_bin.rpm
 https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/amazon-linux-install.html
 
 ```csh
-sudo yum install java-17-amazon-corretto
-sudo yum install java-17-amazon-corretto-headless
-sudo yum install java-17-amazon-corretto-devel
+sudo yum install java-17-amazon-corretto -y
+sudo yum install java-17-amazon-corretto-headless -y
+sudo yum install java-17-amazon-corretto-devel -y
 ```
 

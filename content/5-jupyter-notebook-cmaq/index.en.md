@@ -3,9 +3,14 @@ title: Visualize Results using Jupyter Notebook
 weight: 20
 --- 
 
+:::alert{type=info}
+   The CMAQ output files from the Base and DESID Emission Reduction CMAQ runs were pre-saved to the /shared/build/openmpi-gcc/CMAQv5.4+/data/output directory.
+This will allow you to try out the Jupyter Notebook and the VERDI visualizations without needing to complete the CMAQ runs that output to the /fsx/data/output directory.
+:::
+
 **For this training, use the DCV once the X11 display has been set up.**
 
-Note: it is easier to use copy-and-paste in the SSM Display, as this doesn't work well in the DCV
+Note: it is easier to use tab completion, start entering a directory or file name and then use the tab key, as copy-cut-paste doesn't work in the DCV
 
 NICE DCV is a high-performance remote display protocol that provides customers with a secure way to deliver remote desktops and application streaming from any cloud or data center to any device, over varying network conditions.
 
