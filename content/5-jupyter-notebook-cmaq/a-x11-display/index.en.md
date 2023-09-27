@@ -25,14 +25,22 @@ Output
 
 These instructions will take some time, so be patient!
 
-1. **Update Yum**
-
+1. **Update Yum** (this will take 5 minutes)
 
     ```csh
     sudo yum update
    ```
 
-2. **Add amazon linux extras**
+2. **Answer Y to the question**
+
+Total download size: 500 M
+Is this ok [y/d/N]: 
+
+```csh
+y
+``
+
+3. **Add amazon linux extras**
 
     ```csh
     sudo amazon-linux-extras install epel -y
@@ -41,7 +49,7 @@ These instructions will take some time, so be patient!
 3. **Add Firefox Browser**
 
    ```csh
-   sudo amazon-linux-extras install firefox
+   sudo amazon-linux-extras install firefox -y
    ```
 
 4.  Additional yum instructions
@@ -53,7 +61,7 @@ sudo yum makecache fast
 5. Install Imagemagic
 
 ```csh
-sudo yum install ImageMagick ImageMagick-devel
+sudo yum install ImageMagick ImageMagick-devel -y
 ```
 
 6. Enable X11 forwarding
@@ -84,7 +92,7 @@ Exit the cluster (exit until the terminal closes)
 
 `exit`
 
-Relogin to the cluster
+Relogin to the cluster using the Nice DCV "MATE Terminal"
 
 7. Test display
 
@@ -92,9 +100,9 @@ Relogin to the cluster
 display
 ```
 
-If display still doesn't work, then try running the display command on the terminal within the DCV. If you had previously started the DCV, you need to exit and then restart it.
+If display still doesn't work, if you had previously started the DCV, you need to exit and then restart it.
 
-6. After restarting DCV verify your username and restart the tcsh shell.
+8. After restarting DCV verify your username and restart the tcsh shell.
 
 ```csh
 /bin/tcsh
