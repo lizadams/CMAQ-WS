@@ -3,7 +3,6 @@ title: Get to know the cluster
 weight: 23
 --- 
 
-Now that you are connected to the head node, you can familiarize yourself with the cluster structure by running the following set of commands.
 
 :::alert{type=info}
 [SLURM](https://slurm.schedmd.com/) from SchedMD is one of the resource manager that you can use in AWS ParallelCluster. For an overview of the SLURM commands, see the [SLURM Quick Start User Guide](https://slurm.schedmd.com/quickstart.html). If you are familar with PBS, here is the [PBS-Slurm Conversion Cheat Sheet](https://www.nrel.gov/hpc/assets/pdfs/pbs-to-slurm-translation-sheet.pdf)
