@@ -33,30 +33,38 @@ Download the cluster configuration file below:
 
     ![Create cluster - Region](/static/images/1-createcluster-region.png)
 
-3. Select the cluster configuration file from your download folder.
 
-Either 
+3. Select Existing template
 
-template 1: cluster-config-hpc7g-alinux-snap-spack.yaml
+* Select **Existing template**, and choose **Next**.
 
-or
+    ![Create cluster - name](/static/images/1-createcluster-name.png)
 
-template 2: cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml
+
+* You will be prompted to provide a file. Select the cluster configuration file that you downloaded in step 1 above, 
+
+Template 1:
+
+```csh
+cluster-config-hpc7g-alinux-snap-spack.yaml
+``` 
+
+Template 2:
+
+```csh
+cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml
+```
 
 Select open
 
 The AWS Parallel Cluster UI will pre-fill the values into the form.
 
 
-3. In **Cluster name**:
 
-* Enter a name for your cluster (`CLUSTER_NAME`). 
+4. In **Cluster name**:
 
-* Select **Existing template**, and choose **Next**.
+* Enter a name for your cluster (`CLUSTER_NAME`).
 
-    ![Create cluster - name](/static/images/1-createcluster-name.png)
-
-* You will be prompted to provide a file. Select the cluster configuration file that you downloaded in step 1 above, which is titled `cluster-config-hpc7g-alinux-snap-spack.yaml` or `cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml`.
 
 4. In **Cluster**, select a VPC from your account (there should only be one available in the dropdown), and choose **Next**. 
 
