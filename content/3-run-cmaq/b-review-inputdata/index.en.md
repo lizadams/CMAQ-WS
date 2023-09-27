@@ -34,7 +34,7 @@ CMAQv5.4_2018_12US1_Benchmark_2Day_Input:
 
 ```
 
-If there is no output, then the yaml file did not import the S3 bucket. Skip Step 2 and go to step 3.
+**If there is no output, then the yaml file did not import the S3 bucket. Skip Step 2 and go to step 3.**
 
 2. **Pre-load the files from the S3 bucket to the Lustre Filesystem**
 
