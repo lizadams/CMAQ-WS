@@ -33,6 +33,21 @@ Download the cluster configuration file below:
 
     ![Create cluster - Region](/static/images/1-createcluster-region.png)
 
+3. Select the cluster configuration file from your download folder.
+
+Either 
+
+template 1: cluster-config-hpc7g-alinux-snap-spack.yaml
+
+or
+
+template 2: cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml
+
+Select open
+
+The AWS Parallel Cluster UI will pre-fill the values into the form.
+
+
 3. In **Cluster name**:
 
 * Enter a name for your cluster (`CLUSTER_NAME`). 
