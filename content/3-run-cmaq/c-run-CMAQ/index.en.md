@@ -87,7 +87,7 @@ whoami
 
 If the output is ssm-user, then use the following command to switch users, and resubmit the job.
 
-8. Switch to ec2-user
+8. **Switch to ec2-user**
 
 ```csh
 sudo su ec2-user
@@ -99,7 +99,7 @@ sudo su ec2-user
 sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
-10. Check the log file to verify that it is processing correctly.
+10. **Check the log file to verify that it is processing correctly.**
 
 CMAQ does not use parallel I/O so it will take about 3 minutes at the beginning of the run before you see output such as this:
 
