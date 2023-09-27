@@ -38,8 +38,6 @@ Download the cluster configuration file below:
 
 * Select **Existing template**, and choose **Next**.
 
-    ![Create cluster - name](/static/images/1-createcluster-name.png)
-
 
 * You will be prompted to provide a file. Select the cluster configuration file that you downloaded in step 1 above, 
 
@@ -63,7 +61,13 @@ The AWS Parallel Cluster UI will pre-fill the values into the form.
 
 4. In **Cluster name**:
 
-* Enter a name for your cluster (`CLUSTER_NAME`).
+* Enter a name for your cluster (`CLUSTER_NAME`). 
+
+```csh
+cmaq-cluster
+```
+
+   ![Create cluster - name](/static/images/1-createcluster-name.png)
 
 
 4. In **Cluster**, select a VPC from your account (there should only be one available in the dropdown), and choose **Next**. 
