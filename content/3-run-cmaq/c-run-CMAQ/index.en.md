@@ -99,7 +99,10 @@ sudo su ec2-user
 sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
-10. CMAQ does not use parallel I/O so it will take about 3 minutes at the beginning of the run before you see output such as this:
+10. Check the log file to verify that it is processing correctly.
+
+CMAQ does not use parallel I/O so it will take about 3 minutes at the beginning of the run before you see output such as this:
+
 
 ```csh
 tail -n 30 tail -n 30 run_cctm5.4+_Bench_2018_12US1_cb6r5_ae6_20200131_MYR.192.12x16pe.1day.20171222start.3x64.log
