@@ -24,3 +24,4 @@ Output:
 4. **Note, if the Jupyer Notebook Kernel dies then there may not be enough memory to create the visualization.**
 
 One suggestion is to upgrade the head node to a c7g.2xlarge rather than a c7g.xlarge.
+Note: the OCEAN file that was created should be fine, it is just the visualization of the file that doesn't have enough memory.
