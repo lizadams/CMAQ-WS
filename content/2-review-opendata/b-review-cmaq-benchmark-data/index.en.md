@@ -64,6 +64,6 @@ Output (demonstrating the high transfer rate of 27Mib/sec)
 
 
 :::alert{type=info}
-For this training, the data will be pre-loaded from the S3 bucket to the /fsx or Lustre File System
+For this training, the data will either be pre-loaded or copied from the S3 bucket to the /fsx or Lustre File System
 :::
 

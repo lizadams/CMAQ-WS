@@ -1,5 +1,5 @@
 ---
-title: Review timings for CMAQ on the HPC7g Cluster
+title: Review timings for CMAQ on the HPC7g Cluster (skip until later, as it takes 30 minutes to run CMAQ)
 weight: 23
 ---
 

@@ -27,13 +27,13 @@ set START_DATE = "2017-12-22"     #> beginning date (January 22, 2017)
 set END_DATE   = "2017-12-22"     #> ending date     
 ```
 
-3. Edit the namelist file to specify the variables and layers output to the ELMO and AELMO file
+3. The CMAQ_Control_Misc.nml namelist file was modified (just review instructions below).
 
 ```csh
 cd BLD_CCTM_v54+_gcc
 vi CMAQ_Control_Misc.nml
 ```
-Edit to activate both instant and average ELMO
+Activate both instant and average ELMO
 
 ```
 &elmo_activate
@@ -42,11 +42,11 @@ Edit to activate both instant and average ELMO
 /
 ```
 
-Edit to specify the AMET output variables
+Specify the a limited set of output variables
 
-```
-Inst_Vars_Nml = 'AMET'
-Avrg_Vars_Nml = 'AMET'
+```csh
+Inst_Vars_Nml = 'NO2', 'SO2', 'O3', 'PM25', 'NOX', 'ASO4I', 'ASO4J', 'ASO4K', 'ANO3I', 'ANO3J', 'ANO3K', 'BENZENE', 'SULF'
+Avrg_Vars_Nml = 'NO2', 'SO2', 'O3', 'PM25', 'NOX', 'ASO4I', 'ASO4J', 'ASO4K', 'ANO3I', 'ANO3J', 'ANO3K', 'BENZENE', 'SULF'
 ```
 
 
@@ -60,6 +60,7 @@ module load gcc/gcc-9.3 ioapi-3.2/gcc-9.3-netcdf netcdf-4.8.1/gcc-9.3
 5. **Submit the Run script to the SLURM queue**
 
 ```csh
+cd /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts
 sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
@@ -86,7 +87,7 @@ whoami
 
 If the output is ssm-user, then use the following command to switch users, and resubmit the job.
 
-8. Switch to ec2-user
+8. **Switch to ec2-user**
 
 ```csh
 sudo su ec2-user
@@ -98,7 +99,14 @@ sudo su ec2-user
 sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
 
-10. CMAQ does not use parallel I/O so it will take about 3 minutes at the beginning of the run before you see output such as this:
+10. **Check the log file to verify that it is processing correctly.**
+
+CMAQ does not use parallel I/O so it will take about 3 minutes at the beginning of the run before you see output such as this:
+
+
+```csh
+tail -n 30 tail -n 30 run_cctm5.4+_Bench_2018_12US1_cb6r5_ae6_20200131_MYR.192.12x16pe.1day.20171222start.3x64.log
+```
 
 ```
    Processing Day/Time [YYYYDDD:HHMMSS]: 2017356:002000
@@ -131,6 +139,14 @@ ssh -Y compute-dy-hpc7g-1
 sudo yum install htop
 ```
 
+After you get the following response
+
+```
+Is this ok [y/d/N]:
+```
+
+Enter y 
+
 13. **Run htop on the compute node**
 
 ```csh
@@ -143,5 +159,9 @@ Output
 
 14. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
 
+15. Use q to exit from htop 
 
-15. **Proceed to the next step of running CMAQ using DESID (skip examining the timings until later)**.
+```csh
+q
+```
+16. **Proceed to the next step of running CMAQ using DESID (skip examining the timings until later)**.

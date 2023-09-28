@@ -14,23 +14,61 @@ The instances have the following specifications:
 | hpc7g.16xlarge | 64    | 128          | 200                          | 25                        | $1.6832           |
 | c7g.16xlarge   | 64    | 128          | 30                           | 20                        | $2.32       |
 
-1. Download the cluster configuration file below:
+1. There are two cluster configuration files. 
 
-    :button[Download Template]{href="/static/cluster-config-hpc7g-alinux-snap-spack.yaml" action=download}
+To import the data to the lustre filesystem from the S3 bucket automatically:
+
+Download the cluster configuration file below:
+
+:button[Download Template1]{href="/static/cluster-config-hpc7g-alinux-snap-spack.yaml" action=download}
+
+To configure the lustre filesystem and then copy the data from the s3 bucket using the `aws s3 cp` command
+
+Download the cluster configuration file below:
+
+:button[Download Template2]{href="/static/cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml" action=download}
+
 
 2. In the home page of the AWS ParallelCluster UI, in **Clusters**, select `us-east-1` as your Region on the top-right side of the page, then choose **Create cluster**.
 
     ![Create cluster - Region](/static/images/1-createcluster-region.png)
 
-3. In **Cluster name**:
 
-* Enter a name for your cluster (`CLUSTER_NAME`). 
+3. Select Existing template
 
 * Select **Existing template**, and choose **Next**.
 
-    ![Create cluster - name](/static/images/1-createcluster-name.png)
 
-* You will be prompted to provide a file. Select the cluster configuration file that you downloaded in step 1 above, which is titled `cluster-config-hpc7g.yaml`.
+* You will be prompted to provide a file. Select the cluster configuration file that you downloaded in step 1 above, 
+
+Template 1:
+
+```csh
+cluster-config-hpc7g-alinux-snap-spack.yaml
+``` 
+
+Template 2:
+
+```csh
+cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml
+```
+
+Select open
+
+The AWS Parallel Cluster UI will pre-fill the values into the form.
+
+
+
+4. In **Cluster name**:
+
+* Enter a name for your cluster (`CLUSTER_NAME`). 
+
+```csh
+cmaq-cluster
+```
+
+   ![Create cluster - name](/static/images/1-createcluster-name.png)
+
 
 4. In **Cluster**, select a VPC from your account (there should only be one available in the dropdown), and choose **Next**. 
 

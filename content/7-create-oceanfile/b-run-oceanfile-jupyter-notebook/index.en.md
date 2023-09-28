@@ -16,3 +16,11 @@ jupyter notebook
 
 3. **Use the Shift Enter keys to run each cell within the Jupyter Notebook**
 
+4. **Note the ouptut directory for the files is under the following direcotry**
+
+```csh
+cd /shared/build/CMAQ_REPO_v54+/PYTOOLS/dmschlo
+ls
+```
+
+

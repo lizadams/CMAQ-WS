@@ -1,10 +1,11 @@
 ---
-title: Set up the Input Data 
+title: Set up the Input Data
 weight: 23
 ---
 
 :::alert{type=info}
-Note, the YAML file used to create the cluster created an automatic link from the S3 bucket to the /fsx file system.
+Note, either the YAML file used to create the cluster created an automatic link from the S3 bucket to the /fsx file system.
+Or, the YAML file created a lustre file system with no S3 bucket Imported or linked to it.
 The following instructions help to prepare the input data prior to running CMAQ.
 [AWS Guide on Preloading Files](https://docs.aws.amazon.com/fsx/latest/LustreGuide/preload-file-contents-hsm-dra.html)
 :::
@@ -33,6 +34,8 @@ CMAQv5.4_2018_12US1_Benchmark_2Day_Input:
 
 ```
 
+**If there is no output, then the yaml file did not import the S3 bucket. Skip Step 2 and go to step 3.**
+
 2. **Pre-load the files from the S3 bucket to the Lustre Filesystem**
 
 Change directires out of the parallel FSx for Lustre filesystem to the shared EBS volume
@@ -48,20 +51,27 @@ CMAQ is sensitive to latencies, so it is best to preload contents of individual 
 nohup find /fsx/ -type f -print0 | xargs -0 -n 1 sudo lfs hsm_restore &
 ```
 
-3. **Create a directory that specifies the full path that the run scripts are expecting.**
+3. **If the input data is not already there, then copy the data from the s3://cmas-cmaq/ bucket using the following command**
+If the data transfers at 160 MiB/sec, then it will take about 10 minutes.
+
+```csh
+aws s3 --no-sign-request cp --recursive s3://cmas-cmaq/CMAQv5.4_2018_12US1_Benchmark_2Day_Input /fsx/CMAQv5.4_2018_12US1_Benchmark_2Day_Input
+```
+
+4. **Create a directory that specifies the full path that the run scripts are expecting.**
 
 ```csh
 mkdir -p /fsx/data/CMAQ_Modeling_Platform_2018/
 ```
 
-4. **Link the 2018_12US1 directoy**
+5. **Link the 2018_12US1 directoy**
 
 ```csh
 cd /fsx/data/CMAQ_Modeling_Platform_2018/
 ln -s /fsx/CMAQv5.4_2018_12US1_Benchmark_2Day_Input/2018_12US1/ .
 ```
 
-5. **Create the output directory**
+6. **Create the output directory**
 
 ```csh
 mkdir -p /fsx/data/output
