@@ -3,7 +3,7 @@ title: "Preparation"
 weight: 10
 ---
 
-This workshop walks you through setting up your own weather forecasting environment. You learn how to navigate the AWS Management Console, access relevant services, and how to deploy a basic infrastructure. Specifically, you learn how to:
+This workshop walks you through running the Community Multiscale Air Quality (CMAQ) Model on the AWS Parallel Cluster. You learn how to navigate the AWS Management Console, access relevant services, and how to deploy a basic infrastructure. Specifically, you learn how to:
 
 * Sign in to the AWS Management Console and explore it.
 * Deploy the AWS ParallelCluster UI stack.
