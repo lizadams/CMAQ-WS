@@ -74,7 +74,7 @@ Output
 
 ```
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-                 1   compute     CMAQ   ubuntu CF       0:30      3 compute-dy-hpc7g-[1-3]
+                 1   compute     CMAQ   ec2-user CF       0:30      3 compute-dy-hpc7g-[1-3]
 ```
 
 Wait for the status to change from CF to R
