@@ -32,7 +32,7 @@ The statements in this training manual are those of the staff of the Community M
 
 **Acknowledgements**
 
-The CMAS Center is greatful for the financial and technical support by AWS Tim Brown for this workshop. 
+The U.S. EPA, through its Office of Research and Development, partially funded and collaborated in the research described here under EP-W-16-014 to UNC Chapel Hill. We also thank Amazon Web Services for offering cloud credits to use in this workshop.
 
 
 © 2023 Institute for the Environment, University of North Carolina at Chapel Hill, https://cmascenter.org/
