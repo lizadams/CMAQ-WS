@@ -17,5 +17,22 @@ This workshop is designed for modelers who want to learn more about running CMAQ
 
 **Region specific constraints**
 
-In order to successfully run this workshop, you should select a region where Amazon EC2 hpc7g instances are available.
-Additionally, the snapshot that contains the software installation is open to the public, and is available in the us-east-1 region.
+In order to successfully run this workshop requires a snapshot that is only available in the us-east-1 region where Amazon EC2 hpc7g instances are available.  
+
+The snapshot that contains the software installation that was built on Alinux2 is open to the public, and is available in the us-east-1 region.
+
+Users can copy the public snapshot from the us-east-1 region to any region where the hpc7g instance is available and modify the yaml file to create a ParallelCluster in another region.
+
+If you would like to build a ParallelCluster using a different operating system or EC2 compute node, you will need to follow the instructions in the Developer Guide section of the CMAQ on AWS Tutorial to install the libraries and CMAQ software. https://pcluster-cmaq.readthedocs.io/en/latest/user_guide_pcluster/developers_guide/index.html
+
+
+**Disclaimer**
+
+The statements in this training manual are those of the staff of the Community Modeling and Analysis Center and not necessarily those of the University of North Carolina at Chapel Hill nor United States Environmental Protection Agency.  The material in this training manual has not been subjected to the U.S. EPA’s peer and administrative review, nor has it been approved for publication as an EPA document. The mention of commercial products, their source, or their use in connection with material reported herein is not to be construed as actual or implied endorsement of such products.
+
+**Acknowledgements**
+
+
+
+
+© 2023 Institute for the Environment, University of North Carolina at Chapel Hill, https://cmascenter.org/
