@@ -9,6 +9,10 @@ The following prerequisites are required for the HPC workshops:
 * An internet browser such as Chrome, Firefox, Safari, Opera, or Edge.
 * Familiarity with common Linux commands.
 
+If you would like to learn more in depth about generating initial conditions and boundary conditions as part of the CMAQ modeling framework please register for a 4-day online class here: https://cmascenter.org/training/classes/online-cmaq-class.cfm
+
+A tutorial for running CMAQ on Parallel Cluster is also available here: https://pcluster-cmaq.readthedocs.io/en/latest/ 
+
 If you have any questions when running this workshop, speak with your group coordinator or contact [AWS HPC](https://aws.amazon.com/hpc/).
 
 This workshop includes multiple code samples that you can copy and paste using the button shown below.
