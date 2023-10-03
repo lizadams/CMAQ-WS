@@ -21,7 +21,7 @@ In order to successfully run this workshop requires a snapshot that is only avai
 
 The snapshot that contains the software installation that was built on Alinux2 is open to the public, and is available in the us-east-1 region.
 
-Users can copy the public snapshot from the us-east-1 region to any region where the hpc7g instance is available and modify the yaml file to create a ParallelCluster in another region.
+Users can copy the public snapshot from the us-east-1 region to any region where the hpc7g instance is available and modify the yaml file to create a ParallelCluster in another region where hpc7g instances are available. Alternatively, you can use the c7g EC2 instances in more regions, but the cost will be higher.
 
 If you would like to build a ParallelCluster using a different operating system or EC2 compute node, you will need to follow the instructions in the Developer Guide section of the CMAQ on AWS Tutorial to install the libraries and CMAQ software. https://pcluster-cmaq.readthedocs.io/en/latest/user_guide_pcluster/developers_guide/index.html
 
