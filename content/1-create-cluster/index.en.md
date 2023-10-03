@@ -4,8 +4,8 @@ weight: 20
 --- 
 
 :::alert{type=info}
-Note, the YAML file used to create the cluster uses a snapshot that was created using the ubuntu2004 OS
-If you choose a different version of the OS or a different OS, you will need to follow instructions in the [developer guide](https://pcluster-cmaq.readthedocs.io/en/latest/user_guide_pcluster/developers_guide/cmaq-vm/install_64-bit-arm.html) to install the CMAQ libraries and code.
+Note, the YAML file used to create the cluster uses a snapshot that was created using the Alinux2 Operating System
+If you would like to install CMAQ on the Ubuntu 22.04.2 LTS OS, please follow instructions in the [developer guide](https://pcluster-cmaq.readthedocs.io/en/latest/user_guide_pcluster/developers_guide/cmaq-vm/install_64-bit-arm.html) to install the CMAQ libraries and code.
 :::
 
 ### AWS ParallelCluster 
