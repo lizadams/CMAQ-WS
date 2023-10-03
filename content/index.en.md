@@ -17,7 +17,7 @@ This workshop is designed for modelers who want to learn more about running CMAQ
 
 **Region specific constraints**
 
-In order to successfully run this workshop requires a snapshot that is only available in the us-east-1 region where Amazon EC2 hpc7g instances are available.  
+In order to successfully run this workshop requires a snapshot that is only available in the us-east-1 region. The yaml file uses the HPC7g compute node, and these compute nodes are available in a limited number of regions, including the us-east-1 region.
 
 The snapshot that contains the software installation that was built on Alinux2 is open to the public, and is available in the us-east-1 region.
 
