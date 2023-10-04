@@ -40,6 +40,6 @@ jupyter notebook
 
 ![maximum negative decrease in SO2 Concentration](/static/images/6-SO2-average-base-vs-desid.png)
 
-10. Plot of maximum negative decrease in ASO4J Concentration
+10. Plot of Average SO2 Concentration Difference (left plot) versus Average SO2 Percent Difference (right plot)
 
 ![maximum negative decrease in ASO4J Concentration](/static/images/6-SO2-diff-vs-perc-diff.png)
