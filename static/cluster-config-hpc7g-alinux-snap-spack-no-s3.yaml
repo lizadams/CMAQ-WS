@@ -42,7 +42,7 @@ SharedStorage:
     StorageType: Ebs
     EbsSettings:
       Encrypted: false
-      SnapshotId: snap-00502daf1e91b04aa 
+      SnapshotId: snap-0e4519705c745f0ea
       Size: 100
   - Name: FsxLustre0
     StorageType: FsxLustre
