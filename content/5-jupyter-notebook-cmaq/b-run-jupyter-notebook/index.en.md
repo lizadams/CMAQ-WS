@@ -26,30 +26,20 @@ jupyter notebook
 ```
 
 
-5. Double Click on the Spatial_Plots_of_Max_Conc_Differences.ipynb notebook
+5. Double Click on the Spatial_Plots_of_Ave_Conc_Differences.ipynb notebook
 
-![jupyter notebook](/static/images/5-jupyter-notebook.png)
+![jupyter notebook](/static/images/5-jupyter-notebook-avg-conc-diff.png)
 
 6. In each cell you can use the 'shift return'  or 'shift enter' to run each cell
 
 7. In the section "Set up your Inputs" you will use shift+enter, then enter the value, and then enter to submit the answer.
 
-8. After the last cell is run, you should see output such as: 
+8. View the plots within the Jupyter Notebook in cells after the plots have been generated 
 
-There are no differences in GLYD, ..
-Ignore any error or warning messages.
+9. Plot of Average SO2 Base (left plot) versus Average SO2 DESID REDUCE CMAQ
 
-9. View the plots within the Jupyter Notebook in cells after the plots have been generated 
+![maximum negative decrease in SO2 Concentration](/static/images/6-SO2-average-base-vs-desid.png)
 
-10. Plot of maximum negative decrease in SO2 Concentration
+10. Plot of maximum negative decrease in ASO4J Concentration
 
-![maximum negative decrease in SO2 Concentration](/static/images/6-SO2-max-negative.png)
-
-11. Plot of maximum negative decrease in ASO4J Concentration
-
-![maximum negative decrease in ASO4J Concentration](/static/images/6-ASO4J-max-negative.png)
-
-12. Plot of maximum negative decrease in Benzene Concentration
-
-![maximum negative decrease in Benzene Concentration](/static/images/6-benzene-max-negative.png)
-
+![maximum negative decrease in ASO4J Concentration](/static/images/6-SO2-diff-vs-perc-diff.png)
