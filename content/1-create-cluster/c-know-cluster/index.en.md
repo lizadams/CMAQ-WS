@@ -12,7 +12,7 @@ weight: 23
 Please use the SSM Connect Shell for all sections of the training except the visualization using Jupyter Notebook or VERDI
 :::
 
-If you create a new shell, or switch between a shell in the Terminal on SSM Connect, you will need to verify your username and verify that you are using the tcsh shell..
+If you create a new shell, or switch between a shell in the Terminal on SSM Connect, you will need to verify your username and verify that you are loading the environment modules. 
 
 Your user should be similar to `ec2-user@ip-<IP-address>`. If it is otherwise something like `sh-4.2` or `ssm-user@<IP-address>`, then run the following command before proceeding:
 
@@ -32,22 +32,8 @@ sudo su ec2-user
 
 ![ec2-user](/static/images/1-gettoknow-ec2user.png)
 
-3. **Verify shell**
 
-   ```csh
-   echo $SHELL
-   ```
-
-4. **If not in tcsh shell, then change shell to use tcsh**<br>
-
-The tcsh shell loads the custom module environment required to run CMAQ. 
-
-   ```csh
-   /bin/tcsh
-   ```
-
-
-5. **List existing partitions and nodes per partition.** 
+3. **List existing partitions and nodes per partition.** 
 
     ```bash
     sinfo
@@ -71,7 +57,7 @@ The tcsh shell loads the custom module environment required to run CMAQ.
 
 [Environment Modules](http://modules.sourceforge.net/) or [Lmod](https://lmod.readthedocs.io/en/latest/) are fairly standard tools in HPC that are used to dynamically change your environment variables (`PATH`, `LD_LIBRARY_PATH`, etc.).
 
-6. **List available modules**  The cluster has *openmpi* pre-installed by amazon. This MPI version of openmpi was compiled with support for the high-speed interconnect EFA.
+4. **List available modules**  The cluster has *openmpi* pre-installed by amazon. This MPI version of openmpi was compiled with support for the high-speed interconnect EFA.
 
     ```csh
     module avail
@@ -81,7 +67,7 @@ The tcsh shell loads the custom module environment required to run CMAQ.
 
     ![module avail](/static/images/1-gettoknow-moduleavail.png)
 
-7. **List the modules that are loaded, and the path to the version of mpirun that is being used** 
+5. **List the modules that are loaded, and the path to the version of mpirun that is being used** 
 
     ```csh
     module list
@@ -94,7 +80,7 @@ The tcsh shell loads the custom module environment required to run CMAQ.
 
 #### Filesystems
 
-8. **List mounted volumes.** A few volumes are shared by the head-node via NFS and will be mounted on compute instances when they boot up. Both /fsx and /home are accessible by all nodes.
+6. **List mounted volumes.** A few volumes are shared by the head-node via NFS and will be mounted on compute instances when they boot up. Both /fsx and /home are accessible by all nodes.
 
 * **Check the amount of available disk space for all file systems**. When we created the cluster, we also created a Lustre filesystem with FSx Lustre. We can see where it was mounted and the storage size by running:
 
