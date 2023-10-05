@@ -28,19 +28,10 @@ These instructions will take some time, so be patient!
 1. **Update Yum** (this will take 5 minutes)
 
     ```csh
-    sudo yum update
+    sudo yum update -y
    ```
 
-2. **Answer Y to the question**
-
-Total download size: 500 M
-Is this ok [y/d/N]: 
-
-```csh
-y
-``
-
-3. **Add amazon linux extras**
+2. **Add amazon linux extras**
 
     ```csh
     sudo amazon-linux-extras install epel -y
