@@ -32,7 +32,6 @@ The statements in this training manual are those of the staff of the Community M
 
 **Acknowledgements**
 
-The U.S. EPA, through its Office of Research and Development, partially funded and collaborated in the research described here under EP-W-16-014 to UNC Chapel Hill. We also thank Amazon Web Services for offering cloud credits to use in this workshop.
+The U.S. EPA, through its Office of Research and Development, partially funded and collaborated in the research described here under EP-W-16-014 to UNC Chapel Hill. Also
+the Institute for the Environment, University of North Carolina at Chapel Hill for collaborating on the creation of this workshop.
 
-
-© 2023 Institute for the Environment, University of North Carolina at Chapel Hill, https://cmascenter.org/

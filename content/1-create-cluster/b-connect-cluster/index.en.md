@@ -41,7 +41,9 @@ module list
 
 
 
-#### Option 2: DCV - only for Jupyter Notebook and VERDI applications that require X11 imagemagick display (creating plots) 
+#### Option 2: DCV
+
+Only for Jupyter Notebook and VERDI applications that require a display (creating plots).
 
 (skip until later)
 

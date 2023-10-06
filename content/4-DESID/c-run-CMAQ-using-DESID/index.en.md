@@ -34,13 +34,14 @@ Output
 
 Wait for the status to change from CF to R
 
-4. **Login to the compute node and run htop**
+4. **Login to the compute node, install  and run htop**
 
 ```csh
 ssh -Y compute-dy-hpc7g-1
+sudo yum install -y htop
 htop
 ```
 
 ![ec2-user](/static/images/2-run-cmaq-htop.png)
 
-5. HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.
+Htop should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.

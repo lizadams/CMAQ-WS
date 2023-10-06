@@ -14,7 +14,7 @@ The CMAQ run script has been configured to run on 192 cores (3 compute nodes of 
 cd /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts
 ```
 
-2. **Verify the run script (`run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh`) is set to run for 1 day.
+2. **Verify the run script (`run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh`) is set to run for 1 day.**
 
 ```csh
 grep _DATE run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
@@ -27,7 +27,7 @@ set START_DATE = "2017-12-22"     #> beginning date (January 22, 2017)
 set END_DATE   = "2017-12-22"     #> ending date     
 ```
 
-3. The CMAQ_Control_Misc.nml namelist file was modified (just review instructions below).
+3. **The CMAQ_Control_Misc.nml namelist file was modified (just review instructions below).**
 
 ```csh
 cd BLD_CCTM_v54+_gcc
@@ -79,7 +79,8 @@ Output
 
 Wait for the status to change from CF to R
 
-7. If the job fails to run, then verify your username is ec2-user
+:::alert{type=info}
+- **If the job fails to run, then verify your username is ec2-user.**
 
 ```csh
 whoami
@@ -87,17 +88,18 @@ whoami
 
 If the output is ssm-user, then use the following command to switch users, and resubmit the job.
 
-8. **Switch to ec2-user**
+- **Switch to ec2-user**
 
 ```csh
 sudo su ec2-user
 ```
 
-9. **Re-Submit the Run script to the SLURM queue**
+- **Re-Submit the Run script to the SLURM queue**
 
 ```csh
 sbatch run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic.csh
 ```
+:::
 
 10. **Check the log file to verify that it is processing correctly.**
 
@@ -136,16 +138,8 @@ ssh -Y compute-dy-hpc7g-1
 12. **Install htop on the compute node**
 
 ```csh
-sudo yum install htop
+sudo yum install -y htop
 ```
-
-After you get the following response
-
-```
-Is this ok [y/d/N]:
-```
-
-Enter y 
 
 13. **Run htop on the compute node**
 
@@ -157,11 +151,12 @@ Output
 
 ![ec2-user](/static/images/2-run-cmaq-htop.png)
 
-14. **HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.**
+ HTOP should show that 64 processes are running and that 80.2G out of 124 G of memory is being used.
 
-15. Use q to exit from htop 
+15. **Use q to exit from htop.**
 
 ```csh
 q
 ```
-16. **Proceed to the next step of running CMAQ using DESID (skip examining the timings until later)**.
+
+Proceed to the next step of running CMAQ using DESID (skip examining the timings until later).

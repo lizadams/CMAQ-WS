@@ -3,7 +3,9 @@ title: Verify the Python Installation for PYTOOLS
 weight: 21
 --- 
 
-1. **Start the DCV**
+1. **Follow the instructions to [connect with DCV](/1-create-cluster/b-connect-cluster#option-2:dcv) and launch a terminal.**
+
+![MATE Terminal](/static/images/6-verdi-dcv-select-terminal.png)
 
 2. **Change directories to the PYTOOLS location**
 
