@@ -5,8 +5,6 @@ weight: 20
 
 ### Run VERDI to look the change in Ozone
 
-Note, it is difficult to copy and paste content to the NICE DCV.
-
 Please use the following scripted versions.
 
 ```csh

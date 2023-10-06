@@ -3,46 +3,24 @@ title: "Install VERDI on HPC cluster"
 weight: 20
 ---
 
-### Login to cluster using the Nice DCV 
+1. **Follow the instructions to [connect with DCV](/1-create-cluster/b-connect-cluster#option-2:dcv) and launch a terminal.**
 
-### Select Activities > Show Applications > Select MATE Terminal
+![MATE Terminal](/static/images/6-verdi-dcv-select-terminal.png)
 
-1. Select Terminal within the DCV
-
-   ![DCV terminal](/static/images/6-verdi-dcv-select-terminal.png)
-
-2. Switch to tcsh shell
+2. **Switch to tcsh shell.**
 
 ```csh
 /bin/tcsh
 ```
 
-3. Verify that VERDI is installed
+3. **Install Java 17 and VERDI.**
 
 ```csh
-which verdi.sh
-```
-
-4. Verify headless display is available
-
-```csh
-ls -rlt /usr/lib/jvm/java-17-amazon-corretto.aarch64/lib/libawt.so
-```
-
-5. Install libraries needed for headless display
-
-```csh
-wget https://download.oracle.com/java/17/archive/jdk-17.0.8_linux-aarch64_bin.rpm
-sudo rpm -ivh jdk-17.0.8_linux-aarch64_bin.rpm
-```
-
-6. Install additional GUI libraries following these instructions: 
-
-https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/amazon-linux-install.html
-
-```csh
-sudo yum install java-17-amazon-corretto -y
-sudo yum install java-17-amazon-corretto-headless -y
-sudo yum install java-17-amazon-corretto-devel -y
+sudo yum install -y java-17-amazon-corretto
+pip install gdown
+gdown 'https://drive.google.com/uc?export=download&id=1Hrr_0N09RN4g8g8lZ4bFQZWR3nABade_'
+tar xf VERDI_2.1.4_linux64_20221007.tar.gz
+cd VERDI_2.1.2
+sed -i 's/^JAVA=.*/JAVA=$(which java)/' verdi.sh
 ```
 

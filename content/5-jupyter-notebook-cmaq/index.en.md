@@ -8,11 +8,14 @@ weight: 20
 This will allow you to try out the Jupyter Notebook and the VERDI visualizations without needing to complete the CMAQ runs that output to the /fsx/data/output directory.
 :::
 
-**For this training, use the DCV once the X11 display has been set up.**
+**For this training, use DCV.**
 
-Note: it is easier to use tab completion, start entering a directory or file name and then use the tab key, as copy-cut-paste doesn't work in the DCV
+:::alert{type=info}
+Note: it might be easier to use tab completion, start entering a directory or file name and then use the tab key, as you have to sync your local copy-cut-paste buffer with the remote buffer when using DCV.
+![Sync buffers](/static/images/dcv-sync.png)
+:::
 
-NICE DCV is a high-performance remote display protocol that provides customers with a secure way to deliver remote desktops and application streaming from any cloud or data center to any device, over varying network conditions.
+NICE DCV is a high-performance remote display protocol that provides customers with a secure way to deliver remote desktops and application streaming from any cloud or data center to any device, over varying network conditions. Connect to the [cluster using DCV](http://localhost:8080/en-US/1-create-cluster/b-connect-cluster#option-2:-dcv-only-for-jupyter-notebook-and-verdi-applications-that-require-x11-imagemagick-display-(creating-plots)).
 
 There are additional methods to create plots of CMAQ Output Data, and some of this is being shared as scripts.
 Typically these files end in an extention that reflects their contents as follows:

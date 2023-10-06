@@ -3,9 +3,10 @@ title: Run Jupyter Notebook to analyze difference between with DESID Emissions a
 weight: 30 
 ---
 
-###  Connect to the NICE DCV 
 
-1. Select Activities, then click on Terminal Image (MATE Terminal)
+1. If you do not already have a terminal open. Select Activities, then click on Terminal Image (MATE Terminal)
+
+![MATE Terminal](/static/images/6-verdi-dcv-select-terminal.png)
 
 2. Change directories to the location of the Jupyter Notebook 
 
