@@ -13,14 +13,9 @@ weight: 20
 /bin/tcsh
 ```
 
-3. **Install Java 17 and VERDI.**
+3. **Install Java 17**
 
 ```csh
 sudo yum install -y java-17-amazon-corretto
-pip install gdown
-gdown 'https://drive.google.com/uc?export=download&id=1Hrr_0N09RN4g8g8lZ4bFQZWR3nABade_'
-tar xf VERDI_2.1.4_linux64_20221007.tar.gz
-cd VERDI_2.1.2
-sed -i 's/^JAVA=.*/JAVA=$(which java)/' verdi.sh
 ```
 
