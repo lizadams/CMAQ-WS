@@ -13,9 +13,12 @@ weight: 23
 sudo bash
 yum update
 yum makecache fast
-yum install -y ImageMagick ImageMagick-devel
-amazon-linux-extras install -y firefox
 exit
+```
+
+```csh
+sudo yum install -y ImageMagick ImageMagick-devel
+sudo yum install amazon-linux-extras install -y firefox
 ```
 
 Verify ImageMagick is installed and working, launch it.
