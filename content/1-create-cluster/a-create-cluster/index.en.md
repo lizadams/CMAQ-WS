@@ -14,7 +14,7 @@ The compute node instances have the following specifications:
 | hpc7g.16xlarge | 64    | 128          | 200                          | 25                        | $1.6832         |
 | c7g.16xlarge   | 64    | 128          | 30                           | 20                        | $2.32           |
 
-The head note instances have the following specification:
+The head note instance has the following specification:
 
 | Instance Size  | Cores | Memory (GiB) | EFA Network Bandwidth (Gbps) | Network Bandwidth (Gbps)* | On-Demand Price |
 | -------------- | ----- | ------------ | ---------------------------- | ------------------------- | --------------- |
