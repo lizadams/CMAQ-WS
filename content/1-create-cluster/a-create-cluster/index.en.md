@@ -7,12 +7,18 @@ In this section we’re going to use AWS ParallelClusterUI to create a cluster f
 
 You’ll use the [hpc7g](https://aws.amazon.com/ec2/instance-types/hpc7g/) instance, which is AMD Graviton based. The hpc7g instance is designed specifically for tightly coupled HPC style workloads.
 
-The instances have the following specifications:
+The compute node instances have the following specifications:
 
 | Instance Size  | Cores | Memory (GiB) | EFA Network Bandwidth (Gbps) | Network Bandwidth (Gbps)* | On-Demand Price |
 | -------------- | ----- | ------------ | ---------------------------- | ------------------------- | --------------- |
 | hpc7g.16xlarge | 64    | 128          | 200                          | 25                        | $1.6832         |
 | c7g.16xlarge   | 64    | 128          | 30                           | 20                        | $2.32           |
+
+The head note instances have the following specification:
+
+| Instance Size  | Cores | Memory (GiB) | EFA Network Bandwidth (Gbps) | Network Bandwidth (Gbps)* | On-Demand Price |
+| -------------- | ----- | ------------ | ---------------------------- | ------------------------- | --------------- |
+| c7g.2xlarge    |  4    | 16           |   Up to 15                   | Up to 20                  | $0.289          | 
 
 1. Download the cluster configuration file below:
 
