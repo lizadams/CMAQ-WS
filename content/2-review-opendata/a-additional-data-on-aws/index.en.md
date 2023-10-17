@@ -26,8 +26,4 @@ weight: 23
 | [2016v3 Modeling Platform](https://2016v3platform.s3.amazonaws.com/index.html)                                                     | netcdf-3 classic      | mix                 | .camx/.ncf/zip  | 35.2 TiB  |
 | [SMOKE 2016 Modeling Platform](https://cmas-smoke-modeling-platform-2016.s3.amazonaws.com/index.html)                              | netcdf-3 classic      | mix                 |   .ncf/zip      | 392.6 GiB |
 
-:::alert{type=info}
-For this training, the data will be pre-loaded from the S3 bucket to the /fsx or Lustre File System from the CMAQ Benchmark Data S3 Bucket.
-To run CMAQ, the CMAQ run script specifies the directory location matching that on the S3 bucket and using a module environment that supports the netCDF file type.
-:::
 

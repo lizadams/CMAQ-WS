@@ -7,21 +7,19 @@ weight: 23
 
 ![MATE Terminal](/static/images/6-verdi-dcv-select-terminal.png)
 
-1. **Install Imagemagick and Firefox**
+
+2. **Install Imagemagick and Firefox**
+
+Note: if you do not have cut-and-paste working in the Nice DCV, you can use the SSM Connect - Shell to do the following  installation.
 
 ```csh
-sudo bash
-yum update
-yum makecache fast
-exit
-```
-
-```csh
+sudo yum makecache fast
 sudo yum install -y ImageMagick ImageMagick-devel
-sudo yum install amazon-linux-extras install -y firefox
+sudo yum install amazon-linux-extras firefox -y
 ```
 
-Verify ImageMagick is installed and working, launch it.
+Verify ImageMagick is installed and working, launch it on the Nice DCV.
+
 ```csh
 display
 ```

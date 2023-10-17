@@ -7,6 +7,7 @@ HeadNode:
   LocalStorage:
     RootVolume:
       Size: 40
+      Encrypted: false
   Iam:
     AdditionalIamPolicies:
       - Policy: arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
@@ -41,11 +42,15 @@ SharedStorage:
     StorageType: Ebs
     EbsSettings:
       Encrypted: false
+      SnapshotId: snap-0e4519705c745f0ea
+      Size: 100
   - Name: FsxLustre0
     StorageType: FsxLustre
     MountDir: /fsx
     FsxLustreSettings:
       StorageCapacity: 1200
-      ImportPath: s3://cmas-cmaq
       DeletionPolicy: Delete
-      DeploymentType: SCRATCH_1
+      DeploymentType: PERSISTENT_1
+      PerUnitStorageThroughput: 200
+      DataCompressionType: LZ4
+      ImportPath: s3://cmas-cmaq

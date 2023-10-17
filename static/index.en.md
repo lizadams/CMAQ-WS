@@ -32,4 +32,6 @@ The statements in this training manual are those of the staff of the Community M
 
 **Acknowledgements**
 
-This workshop was created by the Center for Community Modeling and Analyses System (CMAS) hosted at the Institute for the Environment at the University of North Carolina at Chapel Hill in collaboration with the U.S. EPA and AWS. The U.S. EPA, through its Office of Research and Development, partially funded and collaborated in the research described here under EP-W-16-014 to UNC Chapel Hill.
+The U.S. EPA, through its Office of Research and Development, partially funded and collaborated in the research described here under EP-W-16-014 to UNC Chapel Hill. Also
+the Institute for the Environment, University of North Carolina at Chapel Hill for collaborating on the creation of this workshop.
+

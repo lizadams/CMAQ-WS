@@ -3,6 +3,8 @@ title: Edit the CMAQ Run script (optional)
 weight: 23
 ---
 
+Note - these were the steps that were taken to set up CMAQ to run using the DESID Chemical Species Control file. Please review - do not re-edit the files.
+
 1. **Copy the Run script and edit it to use the DESID namelist files**
 
 ```csh
@@ -61,7 +63,7 @@ CMAQ won’t crash if the stream name in CMAQ_Control_DESID_<MECH>_RED_EGU_POINT
 
 ```csh
 cd  /shared/build/openmpi_gcc/CMAQ_v54+/CCTM/scripts/BLD_CCTM_v54+_gcc
-gedit run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic_DESID_RED_NY.csh
+vi run_cctm_2018_12US1_v54_cb6r5_ae6.20171222.3x64.ncclassic_DESID_RED_NY.csh
 ```
 
 Modify the namelist setting to use the DESID namelist:

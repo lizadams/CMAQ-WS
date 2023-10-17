@@ -11,22 +11,12 @@ The instances have the following specifications:
 
 | Instance Size  | Cores | Memory (GiB) | EFA Network Bandwidth (Gbps) | Network Bandwidth (Gbps)* | On-Demand Price |
 | -------------- | ----- | ------------ | ---------------------------- | ------------------------- | --------------- |
-| hpc7g.16xlarge | 64    | 128          | 200                          | 25                        | $1.6832           |
-| c7g.16xlarge   | 64    | 128          | 30                           | 20                        | $2.32       |
+| hpc7g.16xlarge | 64    | 128          | 200                          | 25                        | $1.6832         |
+| c7g.16xlarge   | 64    | 128          | 30                           | 20                        | $2.32           |
 
-1. There are two cluster configuration files. 
+1. Download the cluster configuration file below:
 
-To import the data to the lustre filesystem from the S3 bucket automatically:
-
-Download the cluster configuration file below:
-
-:button[Download Template1]{href="/static/cluster-config-hpc7g-alinux-snap-spack.yaml" action=download}
-
-To configure the lustre filesystem and then copy the data from the s3 bucket using the `aws s3 cp` command
-
-Download the cluster configuration file below:
-
-:button[Download Template2]{href="/static/cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml" action=download}
+:button[Download Template]{href="/static/cluster-config-hpc7g-alinux.yaml" action=download}
 
 
 2. In the home page of the AWS ParallelCluster UI, in **Clusters**, select `us-east-1` as your Region on the top-right side of the page, then choose **Create cluster**.
@@ -41,16 +31,9 @@ Download the cluster configuration file below:
 
 * You will be prompted to provide a file. Select the cluster configuration file that you downloaded in step 1 above, 
 
-Template 1:
 
 ```csh
-cluster-config-hpc7g-alinux-snap-spack.yaml
-``` 
-
-Template 2:
-
-```csh
-cluster-config-hpc7g-alinux-snap-spack-no-s3.yaml
+cluster-config-hpc7g-alinux.yaml
 ```
 
 Select open
@@ -76,7 +59,7 @@ cmaq-cluster
 
 5. In **Head node**:
 
-* Select a subnet from the Availability Zone ID **use2-az2**.
+* Select a subnet from the Availability Zone ID **use1-az6**.
    
     ![Create cluster - subnet](/static/images/1-createcluster-subnet.png)
 

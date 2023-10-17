@@ -31,7 +31,7 @@ Define NY as a region in the DESID Region Definitions
 
 ```csh
 cp CMAQ_Control_DESID.nml CMAQ_Control_DESID_RED_EGU_POINT_NY.nml
-gedit  CMAQ_Control_DESID_RED_EGU_POINT_NY.nml &
+vi  CMAQ_Control_DESID_RED_EGU_POINT_NY.nml &
 ```
 
 Modify the following section to use the NY region that is specified in the CMAQ_MASKS file, note the CMAQ_MASKS file is defined in the DESID Run script.
